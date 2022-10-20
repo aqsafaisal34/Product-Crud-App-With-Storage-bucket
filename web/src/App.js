@@ -16,7 +16,7 @@ function Product() {
   useEffect(() => {
 
     let getAllUsers = async () => {
-       let response = await axios.get('http://localhost:5000/products');
+       let response = await axios.get('https://productcrudapp.herokuapp.com/products');
      
       setUsers(response.data.data)
     }
@@ -48,7 +48,7 @@ function Product() {
 
     axios({
       method: 'post',
-      url: "http://localhost:5000/product",
+      url: "https://productcrudapp.herokuapp.com/products",
       data: formData,
       headers: { 'Content-Type': 'multipart/form-data' },
       withCredentials: true
