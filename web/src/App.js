@@ -65,14 +65,15 @@ function Product() {
 
   return (
     <div>
-      <div className="head">
+      <div className="form">
       <form onSubmit={producthandler}>
         <h1>PRODUCT FORM</h1>
-        Name: <input name="name" type="text" placeholder="Name" id='name' onChange={(e) => { setName(e.target.value) }} />
+
+        Name: <input name="name" type="text" id='name' onChange={(e) => { setName(e.target.value) }} />
         <br />
-        Description: <input name="description" type="text" placeholder="description" id='description' onChange={(e) => { setDescription(e.target.value) }} />
+        Description: <input name="description" type="text"  id='description' onChange={(e) => { setDescription(e.target.value) }} />
         <br />
-        Price: <input name="price" type="Number" placeholder="price" id='price' onChange={(e) => { setPrice(e.target.value) }} />
+        Price: <input name="price" type="Number"  id='price' onChange={(e) => { setPrice(e.target.value) }} />
         <br />
 
         Product Image: <input type="file" id="productimage" accept='image/*'
@@ -94,7 +95,7 @@ function Product() {
       </div>
 
 
-      <h1>products List: </h1>
+      <h1>Products List: </h1>
 
       <div className='productlist'>
         {users.map(eachUser => (
@@ -105,7 +106,7 @@ function Product() {
             <p className='description'>{eachUser.description}</p>
             <p ><span className='price'>{eachUser.price}</span><span>PKR</span></p>
          
-            <hr />
+           
             </div>
           </div>
         ))}
