@@ -5,16 +5,17 @@
 
 body{
     text-align:center;
+    background-color: #F2F2F2;
 }
 
 .form{
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 2px solid black;
+    border-radius: 25px;
     padding: 20px;
     margin: auto;
     width: 50%;
     margin-top: 10px;
-    background-color: rgba(243, 233, 221, 0.208);
+    background-color: white;
 
 }
 form>h1{
@@ -36,13 +37,44 @@ button{
 }
 
 .productlist{
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
     margin: auto;
-    width: 50%;
-    margin-top: 10px;
-    background-color: rgba(243, 233, 221, 0.208);
+    justify-content: space-between;
    
 }
+.product{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product:hover{
+    box-shadow: 0px -1px 6px 5px #d1cece;
+    cursor: pointer;
+}
+.name{
+    margin: 5px;
+}
+.price{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 3px;
+    color: black;
+    text-align: center;
+    margin: 5px;
+}
+.description{
+    margin: 10px;
+}
+
+
 
