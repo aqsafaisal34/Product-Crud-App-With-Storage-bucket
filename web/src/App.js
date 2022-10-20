@@ -46,9 +46,9 @@ function Product() {
     formData.append("productimage", productimage.files[0]); // file input is for browser only, use fs to read file in nodejs client
     
 
-    axios({
+  axios({
       method: 'post',
-      url: "https://productcrudapp.herokuapp.com/products",
+      url: "https://productcrudapp.herokuapp.com/product",
       data: formData,
       headers: { 'Content-Type': 'multipart/form-data' },
       withCredentials: true
